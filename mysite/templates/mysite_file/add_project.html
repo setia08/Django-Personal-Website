@@ -1,0 +1,18 @@
+{% extends "mysite_file/layout.html" %}
+
+{% block body %}
+<div class="page" >
+    <br><br><br><br>
+    <div style="margin: 50px;">
+    <h1>Client Details</h1><hr>
+    <br>
+    {% for i in data %}
+    <div>
+        <h4>Client name:{{i.name}}</h4>
+        <h5>Phone Number:{{i.phone}}</h5>
+        <h5>E-mail:{{i.email}}</h5>
+        <h5>Phone Number:{{i.description}}</h5>
+    </div>
+</div>
+    {% endfor %}
+{% endblock %}

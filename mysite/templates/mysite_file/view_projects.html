@@ -1,0 +1,39 @@
+{% extends "mysite_file/layout.html" %}
+
+{% block body %}
+<style>
+    .cover {
+
+background-image: linear-gradient(0deg, rgba(72,76,77,0.8717612044817927) 1%, rgba(255,255,255,0) 48%, rgba(44,52,54,0.832545518207283) 99%),url('/static/Navneet.png');
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="page_client">
+    <br><br>
+    <div style="margin-left: 30px;">
+       
+        <h1>Project Details</h1><hr>
+        {% for i in all_projects %}
+        <div> <center>
+            <div class="container" style="color: antiquewhite;">
+                <div class="row">
+                    <div class="col-5"   >
+                        <img src="{{i.image.url}}" alt="" style="border: 10px solid #fff;border-radius: 20px;" width="200px" height="200px">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-6"  style="border: 10px solid #fff;border-radius: 20px;background-color:rgba(112, 128, 144,0.4);padding-top: 10px;">
+                        <h4>{{i.title}}</h4><br>
+                     <h6>Youtube link:  <a style="color: antiquewhite;" href="{{i.git_link}}">{{i.git_link}}</a></h6>
+                     <h6>Project Description:{{i.project_description}}</h6>
+                 </div><br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+</div>
+    
+{% endblock %}

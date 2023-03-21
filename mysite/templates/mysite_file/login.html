@@ -1,0 +1,27 @@
+{% extends "mysite_file/layout.html" %}
+
+{% block body %}<style>
+    .cover {
+
+background-image: linear-gradient(0deg, rgba(72,76,77,0.8717612044817927) 1%, rgba(255,255,255,0) 48%, rgba(44,52,54,0.832545518207283) 99%),url('/static/Navneet.png');
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+}
+</style>
+<section>
+<div class="page">
+    <br><br><br><br>
+        <div class="form_box">
+    <form action="{% url 'login' %}" method="post"><br><p>
+        {% csrf_token %} 
+        Username: <br><input type="text" style="width: 250px;!important" name="username"  ><br>
+        Password<br><input type="password" style="width: 250px;!important" name="password" ><br><center>
+        <button  type="submit"  class=" button1 btn btn-outline-light">Login        </button></p></center>
+    </form>
+<h6 style="color: rgb(255, 255, 255);font-size: 10px;background-color: rgb(118, 176, 243);"><i>To acess login page use username and passowrd as 123.</i></h6>
+</div>
+</div>
+</section>
+
+{% endblock %}

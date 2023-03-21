@@ -1,0 +1,27 @@
+{% extends "mysite_file/layout.html" %}
+
+{% block body %}
+<style>
+    .cover {
+
+background-image: linear-gradient(0deg, rgba(72,76,77,0.8717612044817927) 1%, rgba(255,255,255,0) 48%, rgba(44,52,54,0.832545518207283) 99%),url('/static/Navneet.png');
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="page">
+    <br><br><br><br>
+        <div class="form_box">
+    <form action="{% url 'contact' %}" method="post"><br><p>
+        {% csrf_token %} 
+        Name: <br><input type="text" style="width: 250px;!important" name="name" lable="name" ><br>
+        Phone:<br><input type="integer" style="width: 250px;!important" name="phone" lable="phone"><br>
+        E-mail:<br><input type="email" style="width: 250px;!important" name="email" aria-label="email"><br>
+        Description:<br><textarea  name="description" style="width: 250px;!important" cols="30" rows="5" >
+        </textarea><br><center>
+        <button  type="submit"  class=" button1 btn btn-outline-light">Submit        </button></p></center>
+    </form>
+</div>
+</div>
+{% endblock %}

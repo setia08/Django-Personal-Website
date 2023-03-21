@@ -1,0 +1,32 @@
+{% extends "mysite_file/layout.html" %}
+
+{% block body %}
+<style>
+    .cover {
+
+background-image: linear-gradient(0deg, rgba(72,76,77,0.8717612044817927) 1%, rgba(255,255,255,0) 48%, rgba(44,52,54,0.832545518207283) 99%),url('/static/Navneet.png');
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="page">
+    <br><br>
+<div class="row">
+    <div class="col"><div class="about_detail hello_world blur_back">
+        <h1 style="color: rgb(243, 227, 185); font-family: 'Times New Roman', Times, serif;font-size:70px;font-style: italic;text-decoration: underline;">About me</h1><br>
+        <h6>I'm Navneet Setia, a 19-year-old Freelancer Web Developer.</h6>
+        <h6>Professionally connected with web develpment industry and Information Technology. Well organised person, problem solver, with high attention to details.</h6>
+        <h6>Intrested in full stack spectrum and working on ambitious projects with positive people.</h6>
+    </div></div>
+    <div class="col  ">
+        <div class="Images">
+            <img src="/static/CSS.png" class="ele1" alt="" srcset="">
+            <img src="/static/HTML.png" alt="" class="ele2" srcset="">
+            <img src="/static/django.png" alt="" class="ele3" srcset="">
+            <img src="/static/javascript(1).png" class="ele4" alt="" srcset="">
+            <img src="/static/python.png" alt="" class="ele5" srcset="">
+        </div>
+    </div>
+</div>
+{% endblock %}
