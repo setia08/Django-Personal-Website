@@ -23,7 +23,9 @@ To make the website more intractive and Intresting we have used HTML,CSS and Jav
 There has been tremendous use of animation CSS to make website more and more intresting.
 
 ### Languages Used:
-Markup : * Bullet list
-* Bullet list* Bullet list* Bullet list
+* HTML
+* CSS
+* JavaScript
+* Django Python
 
 ## [Youtube Link](https://www.youtube.com/watch?v=CIGhZmUFJ5I)
