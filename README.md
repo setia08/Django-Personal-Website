@@ -17,3 +17,13 @@ This can be considered as a main and important section as it shows how backend d
 
 ### Contact Us 
 here we have used html form which is connected with Djnaho models and data entered in HTML forms get directly entered in the data base which can easily viewed/ Deleted at Backend  
+
+## Decoration
+To make the website more intractive and Intresting we have used HTML,CSS and JavaScript. 
+There has been tremendous use of animation CSS to make website more and more intresting.
+
+### Languages Used:
+Markup : * Bullet list
+* Bullet list* Bullet list* Bullet list
+
+## [Youtube Link](https://www.youtube.com/watch?v=CIGhZmUFJ5I)
